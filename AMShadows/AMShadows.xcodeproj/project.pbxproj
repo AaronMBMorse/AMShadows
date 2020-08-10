@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6BE95DF624E0E59C000B1D2C /* AMShadows.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BE95DF424E0E59C000B1D2C /* AMShadows.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BE95DFD24E0E5FA000B1D2C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE95DFC24E0E5FA000B1D2C /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6BE95DF124E0E59C000B1D2C /* AMShadows.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AMShadows.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BE95DF424E0E59C000B1D2C /* AMShadows.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AMShadows.h; sourceTree = "<group>"; };
 		6BE95DF524E0E59C000B1D2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BE95DFC24E0E5FA000B1D2C /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				6BE95DF424E0E59C000B1D2C /* AMShadows.h */,
 				6BE95DF524E0E59C000B1D2C /* Info.plist */,
+				6BE95DFC24E0E5FA000B1D2C /* main.swift */,
 			);
 			path = AMShadows;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					6BE95DF024E0E59C000B1D2C = {
 						CreatedOnToolsVersion = 11.6;
+						LastSwiftMigration = 1160;
 					};
 				};
 			};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BE95DFD24E0E5FA000B1D2C /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +265,7 @@
 		6BE95DFA24E0E59C000B1D2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U7JGY2USX2;
@@ -276,6 +282,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Stats.AMShadows;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +291,7 @@
 		6BE95DFB24E0E59C000B1D2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = U7JGY2USX2;
